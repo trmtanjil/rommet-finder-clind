@@ -11,6 +11,7 @@ import Login from "../page/Login";
 import Register from "../page/Register";
 import UserDataAdd from "../crudOperation/UserDataAdd";
 import PrivetRouter from "../Privetrouter/PrivetRouter";
+import RommetUserDetails from "../page/RommetUserDetails";
   
 
 
@@ -47,6 +48,11 @@ export const router = createBrowserRouter([
          {
             path:'userdataadd',
             Component:UserDataAdd,
+         },
+         {
+            path:'rommetuserdetails/:id',
+            element:<RommetUserDetails></RommetUserDetails>,
+            loader:({params})=>fetch(`http://localhost:5000/uerrooms/availabality/${params.id}`),
          }
      
     ]

@@ -1,8 +1,10 @@
 import React from 'react'
 import { CiLocationArrow1 } from 'react-icons/ci';
+import { Link } from 'react-router';
 
 function HomecardData6({home}) {
-    console.log(home)
+
+ 
     const {title,lifestyle,location,price,roomType,image,availabality} =home;
   return (
     <div>
@@ -33,7 +35,7 @@ function HomecardData6({home}) {
   </div>
 
   <button className="mt-3 bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">
-    Contact
+     <Link to={`/rommetuserdetails/${home?._id}`}> Rommet Details</Link>
   </button>
 </div>
     </div>

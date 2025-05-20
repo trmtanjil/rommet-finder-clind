@@ -22,7 +22,7 @@ function Home() {
 
 
     {/* homepage 6 data addd  */}
-        <div className='flex flex-wrap justify-center gap-5 max-w-6xl mx-auto'>
+        <div className='grid md:grid-cols-3   gap-5 max-w-6xl mx-auto'>
           {
             alldata.map(home=><HomecardData6 home={home} key={home.home}></HomecardData6>)
           }
