@@ -1,6 +1,5 @@
 import React from 'react'
 import { AiFillLike } from 'react-icons/ai'
-import { LiaKeySolid } from 'react-icons/lia'
 import { useLoaderData } from 'react-router'
  
 function RommetUserDetails() {

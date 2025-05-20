@@ -17,10 +17,10 @@ function Navbar() {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
           
-          <NavLink to="/addtofindrommet" className="hover:text-blue-500">Add to Find Roommate</NavLink>
+          
           <NavLink to="/brouserlisting" className="hover:text-blue-500">Browse Listing</NavLink>
           <NavLink to="/mylisting" className="hover:text-blue-500">My Listings</NavLink>
-          <NavLink to='userdataadd'>UserDataAdd</NavLink>
+          <NavLink to='userdataadd'>Add to Find Roommate</NavLink>
        
       </ul>
     </div>
@@ -31,10 +31,10 @@ function Navbar() {
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
  <div className="hidden sm:flex space-x-4">
-          <NavLink to="/addtofindrommet" className="hover:text-blue-500">Add to Find Roommate</NavLink>
+        
           <NavLink to="/brouserlisting" className="hover:text-blue-500">Browse Listing</NavLink>
           <NavLink to="/mylisting" className="hover:text-blue-500">My Listings</NavLink>
-           <NavLink to='/userdataadd'>UserDataAdd</NavLink>
+          <NavLink to='userdataadd'>Add to Find Roommate</NavLink>
         </div>
       
     </ul>
