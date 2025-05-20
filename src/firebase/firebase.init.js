@@ -13,6 +13,15 @@ const firebaseConfig = {
   messagingSenderId:import.meta.env.VITE_messagingSenderId,
   appId:import.meta.env.VITE_appId,
 };
+// const firebaseConfig = {
+//   apiKey: "AIzaSyBrncCHRxu4D_rRsSYaTrcgE1sJRySU8G0",
+//   authDomain: "roommatefinderwebsite-fb.firebaseapp.com",
+//   projectId: "roommatefinderwebsite-fb",
+//   storageBucket: "roommatefinderwebsite-fb.firebasestorage.app",
+//   messagingSenderId: "418390733831",
+//   appId: "1:418390733831:web:83ea1b39db2cd3982ea6a2"
+// };
+
 
 // Initialize Firebase
   const app = initializeApp(firebaseConfig);
