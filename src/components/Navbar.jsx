@@ -39,7 +39,19 @@ function Navbar() {
       
     </ul>
   </div>
+  <div className="navbar-end">
+ <div>
+          {
+        user ? <Link
+        onClick={logOutUser}
+     
+        className="btn btn-primary ">LogOut</Link> : <>
+                <Link to='/register' className="btn btn-primary">Register</Link>
+        <Link to='/login' className="btn btn-primary">login</Link></>
+      }
 
+        </div>
+  </div>
 </div>
     </div>
   )

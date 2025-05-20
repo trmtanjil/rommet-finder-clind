@@ -38,20 +38,44 @@ import Swal from 'sweetalert2';
       <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
       <form onSubmit={handleAddProduct}>
        <div className="space-y-4 grid md:grid-cols-2 gap-4" >
+        {/* title  */}
          <div>
-          <label>Product Name:</label>
-          <input type="text" name="name" placeholder="Product Name" className="w-full p-2 border rounded" required />
+          <label>Title :</label>
+          <input type="text" name="title" placeholder=" Title " className="w-full p-2 border rounded" required />
         </div>
+    {/* location  */}
          <div>
-          <label>Product title:</label>
-          <input type="text" name="title" placeholder="Product Title" className="w-full p-2 border rounded" required />
+          <label>Location:</label>
+          <input type="text" name="location" placeholder="Location" className="w-full p-2 border rounded" required />
+        </div>
+        {/* rent price  */}
+         <div>
+          <label>Rent Amount :</label>
+          <input type="number" name="price" placeholder="Rent Amount" className="w-full p-2 border rounded" required />
         </div>
 
-        <div>
-          <label>Product Image URL:</label>
-          <input type="text" name="image" placeholder="Product Image URL" className="w-full p-2 border rounded" required />
+
+
+     {/* rusere email  */}
+         <div>
+          <label>User Email:</label>
+          <input type="email" name="email"  readOnly
+  disabled placeholder="Rent Amount" className="w-full p-2 border rounded" required />
         </div>
 
+
+
+ {/* user name */}
+         <div>
+          <label>User Name  :</label>
+          <input type="text" name="username"  readOnly
+  disabled placeholder="User Name " className="w-full p-2 border rounded" required />
+        </div>
+
+
+
+
+{/* Room Type */}
         <div>
     <label htmlFor="roomType" className="block mb-1 font-medium">
       Room Type
@@ -68,7 +92,7 @@ import Swal from 'sweetalert2';
       <option className='text-black' value="Studio">Studio</option>
     </select>
   </div>
-       
+       {/* Lifestyle Preferences */}
 
        <div>
   <label htmlFor="lifestyle" className="block mb-1 font-medium">
@@ -80,24 +104,42 @@ import Swal from 'sweetalert2';
     className="w-full border rounded-md p-2"
     required
   >
-    <option value="">Select Lifestyle Preference</option>
-    <option value="Pets Allowed">Pets Allowed</option>
-    <option value="No Pets">No Pets</option>
-    <option value="Smoking">Smoking</option>
-    <option value="Non-Smoking">Non-Smoking</option>
-    <option value="Night Owl">Night Owl</option>
-    <option value="Early Bird">Early Bird</option>
+    <option  className='text-black' value="">Select Lifestyle Preference</option>
+    <option  className='text-black' value="Pets Allowed">Pets Allowed</option>
+    <option className='text-black'  value="No Pets">No Pets</option>
+    <option className='text-black'  value="Smoking">Smoking</option>
+    <option className='text-black'  value="Non-Smoking">Non-Smoking</option>
+    <option className='text-black'  value="Night Owl">Night Owl</option>
+    <option className='text-black'  value="Early Bird">Early Bird</option>
   </select>
 </div>
        
-    
-
-        <div>
-          <label>Product Category:</label>
-          <input type="text" name="category" placeholder="Product Category" className="w-full p-2 border rounded" />
+    {/* Availability */}
+ <div>
+          <label> Availabality</label>
+          <select name="availabality" className="w-full p-2 border rounded">
+            <option className='text-black'  value="Available">Available</option>
+            <option className='text-black'  value="Not Available">Not Available</option>
+          </select>
         </div>
-
        </div>
+
+{/* //text area  */}
+  <label htmlFor="textarea" className="block mb-1 font-medium">
+    Textarea 
+  </label>
+<textarea
+className='border'
+  placeholder="Write a short description about the room or your preferences "
+   name='textarea'
+  rows={4}
+  cols={50}
+
+/>
+
+
+
+
         <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600 my-4">Submit</button>
       </form>
     </div>
