@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { use } from 'react'
 import { Link, NavLink } from 'react-router'
+import { AuthContext } from '../context/AuthContext'
 
 function Navbar() {
+  const {user,logOutUser}=use(AuthContext)
   return (
     <div>
 
@@ -18,6 +20,7 @@ function Navbar() {
           <NavLink to="/addtofindrommet" className="hover:text-blue-500">Add to Find Roommate</NavLink>
           <NavLink to="/brouserlisting" className="hover:text-blue-500">Browse Listing</NavLink>
           <NavLink to="/mylisting" className="hover:text-blue-500">My Listings</NavLink>
+          <NavLink to='userdataadd'>UserDataAdd</NavLink>
        
       </ul>
     </div>
@@ -31,17 +34,12 @@ function Navbar() {
           <NavLink to="/addtofindrommet" className="hover:text-blue-500">Add to Find Roommate</NavLink>
           <NavLink to="/brouserlisting" className="hover:text-blue-500">Browse Listing</NavLink>
           <NavLink to="/mylisting" className="hover:text-blue-500">My Listings</NavLink>
+           <NavLink to='/userdataadd'>UserDataAdd</NavLink>
         </div>
       
     </ul>
   </div>
-  <div className="navbar-end">
- <div>
-          <NavLink to="/register" className="hover:text-blue-500">Signup</NavLink>
-                    <NavLink to="/login" className="hover:text-blue-500">Login</NavLink>
 
-        </div>
-  </div>
 </div>
     </div>
   )

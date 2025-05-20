@@ -9,7 +9,8 @@ import BrowseListing from "../page/BrowseListing";
 import MyListings from "../page/MyListings";
 import Login from "../page/Login";
 import Register from "../page/Register";
- 
+import UserDataAdd from "../crudOperation/UserDataAdd";
+  
 
 
 
@@ -41,7 +42,11 @@ export const router = createBrowserRouter([
         {
             path:'register',
             Component:Register,
-        }
+        },
+         {
+            path:'userdataadd',
+            Component:UserDataAdd,
+         }
      
     ]
   },

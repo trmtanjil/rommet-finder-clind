@@ -1,14 +1,18 @@
 import React, { use } from 'react'
 import { useState } from 'react'
 import { FaEye, FaEyeSlash } from 'react-icons/fa'
-import { Link } from 'react-router'
-
+import { Link,   } from 'react-router'
 import Swal from 'sweetalert2'
 import { AuthContext } from '../context/AuthContext'
+import { useNavigate } from 'react-router'
+import { updateProfile } from 'firebase/auth'
+import { auth } from '../firebase/firebase.init'
+
 
 function Register() {
-      const [showPass, setShowpass] = useState(false)
-      const {creatuser,googleregister} =use(AuthContext)
+  const [showPass, setShowpass] = useState(false)
+  const {creatuser,googleregister} =use(AuthContext)
+  const navigate = useNavigate();
 
       const handleRegister =e=>{
         e.preventDefault()
@@ -49,8 +53,14 @@ function Register() {
 });
   // update profile 
 
+    const profile={
+        displayName:name,
+        photoURL:photo,
+      }
+      updateProfile(auth.currentUser,profile)
 
 
+navigate('/')
      })
      .catch(error=>{
       alert('register somthir error', error)
