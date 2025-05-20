@@ -10,6 +10,7 @@ import MyListings from "../page/MyListings";
 import Login from "../page/Login";
 import Register from "../page/Register";
 import UserDataAdd from "../crudOperation/UserDataAdd";
+import PrivetRouter from "../Privetrouter/PrivetRouter";
   
 
 
@@ -25,7 +26,7 @@ export const router = createBrowserRouter([
         },
         {
             path:'addtofindrommet',
-            Component:AddtoFindRoommate,
+            element:<PrivetRouter><AddtoFindRoommate></AddtoFindRoommate></PrivetRouter>,
         },
         {
             path:'brouserlisting',
