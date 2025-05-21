@@ -1,6 +1,7 @@
 import React, { use } from 'react'
 import { Link, NavLink } from 'react-router'
 import { AuthContext } from '../context/AuthContext'
+import ThemeToggle from '../page/ThemeToggle'
 
 function Navbar() {
   const {user,logOutUser}=use(AuthContext)
@@ -40,13 +41,35 @@ function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
+          <ThemeToggle></ThemeToggle>
+
+      {/* userNevbar photo  */}
+         <div className='pr-3  flex items-center '>
+      {user && <>
+    
+     <div  className="relative group">
+     <div   className=' cursor-pointer w-9 mx-2  bg-gray-400 p-[3px] rounded-full flex items-center justify-center ' > 
+      <img className='rounded-full'
+      
+       src={user.photoURL}  
+       alt="User Profile" />
+       <div className="absolute -bottom-1s2 left-1/2   bg-gray-800 text-white text-sm rounded-lg px-4  opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+       {user.displayName}
+      </div>
+
+
+       </div>
+     </div>
+      
+      </>}
+    </div>
  <div>
           {
         user ? <Link
         onClick={logOutUser}
      
         className="btn btn-primary ">LogOut</Link> : <>
-                <Link to='/register' className="btn btn-primary">Register</Link>
+                <Link to='/register' className="btn btn-primary mx-3">Register</Link>
         <Link to='/login' className="btn btn-primary">login</Link></>
       }
 

@@ -6,21 +6,26 @@ const provider = new GoogleAuthProvider();
 
 function AuthProvider({children}) {
   const [user, setUser] =useState(null)
+  const [loading, setLoading] =useState(true)
     
    // regiser 
     const creatuser = (email,password)=>{
+      setLoading(true)
     return createUserWithEmailAndPassword(auth,email,password)
     }
     //google register 
         const googleregister =()=>{
+           setLoading(true)
         return signInWithPopup(auth,provider);
     }
     //login 
     const loginuser=(email,password)=>{
+       setLoading(true)
       return signInWithEmailAndPassword(auth,email,password)
     }
     //logout
     const logOutUser=()=>{
+       setLoading(true)
       return signOut(auth)
     }
 
@@ -31,13 +36,15 @@ function AuthProvider({children}) {
           googleregister,  
           loginuser ,
           logOutUser,
-          user
+          user,
+          loading
     }
   
 //add observer
 useEffect(()=>{
   const unSubscribe = onAuthStateChanged(auth,currentuser=>{
     setUser(currentuser)
+     setLoading(false)
   })
   return()=>{
     unSubscribe();

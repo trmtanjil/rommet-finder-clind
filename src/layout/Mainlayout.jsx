@@ -1,7 +1,8 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 import Header from '../components/Header'
-import Foter from '../components/Foter'
+import Foter from '../components/Footer'
+import Footer from '../components/Footer'
 
 function Mainlayout() {
   return (
@@ -11,7 +12,7 @@ function Mainlayout() {
         <div>
             <Outlet></Outlet>
         </div>
-        <Foter></Foter>
+        <Footer></Footer>
     </div>
   )
 }

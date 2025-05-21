@@ -1,6 +1,8 @@
 import React, { use, useEffect, useState } from 'react'
 import { AuthContext } from '../context/AuthContext'
-
+import MylistingDetails from './MylistingDetails'
+import Swal from 'sweetalert2'
+ 
 function MyListings() {
   const {user} = use(AuthContext)
   const [listUser, setLisUser] =useState([])
@@ -19,15 +21,69 @@ function MyListings() {
         })
     }
   },[user])
+  const handledelete=(id,e)=>{
+    e.preventDefault()
+    fetch(`http://localhost:5000/uerrooms/byemail/${id}`,{
+      method:'DELETE',
+      headers:{
+        'content-type':'application/json',
+      },
+    })
+    .then((res)=>res.json())
+    .then((data)=>{
+      if(data.deletedCount>0){
+        Swal.fire({
+  position: "top-end",
+  icon: "success",
+  title: "Your work has been saved",
+  showConfirmButton: false,
+  timer: 1500
+});
+      const  remainingdata =listUser.filter((data)=> data._id !==id);
+        setLisUser(remainingdata)
+      }
+    })
+  };
+
+
 
   return (
-    <div>
+   <div className="overflow-x-auto bg-gray-800">
+  <table className="table">
+    {/* head */}
+    <thead>
+      <tr>
+        <th>
+          <label>
+           <p>ID</p>
+          </label>
+        </th>
+        <th>Name</th>
+        <th>Job</th>
+        <th>Favorite Color</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {/* row 1 */}
+  
     {
-      listUser.map(data=><p>{data.title}</p>)
-    }
+      listUser.map((user,index)=><MylistingDetails 
+      user={user}
+      index={index}
+      handledelete={handledelete}
+       key={user._id}>
 
-    </div>
+       </MylistingDetails>)
+    }
+     
+    </tbody>
+ 
+  
+  </table>
+</div>
   )
 }
 
 export default MyListings
+

@@ -12,7 +12,9 @@ import Register from "../page/Register";
 import UserDataAdd from "../crudOperation/UserDataAdd";
  
 import RommetUserDetails from "../page/RommetUserDetails";
-  
+import PrivetRouter from "../Privetrouter/PrivetRouter";
+import EditmyPage from "../page/EditmyPage";
+    
 
 
 
@@ -33,7 +35,7 @@ export const router = createBrowserRouter([
         },
         {
             path:'mylisting',
-            Component:MyListings,
+            element:<PrivetRouter><MyListings></MyListings></PrivetRouter>
         },
         {
             path:'login',
@@ -45,13 +47,20 @@ export const router = createBrowserRouter([
         },
          {
             path:'userdataadd',
-             element:<UserDataAdd></UserDataAdd>
+             element:<PrivetRouter><UserDataAdd></UserDataAdd></PrivetRouter>
          },
          {
-            path:'rommetuserdetails/:id',
+            path:'productdetails/:id',
             element:<RommetUserDetails></RommetUserDetails>,
             loader:({params})=>fetch(`http://localhost:5000/uerrooms/availabality/${params.id}`),
+         },
+         {
+          path:'editmypase/:id',
+         element:<EditmyPage></EditmyPage>,
+          loader:({params})=>fetch(`http://localhost:5000/uerrooms/${params.id}`),
          }
+        
+          
      
     ]
   },
