@@ -90,21 +90,21 @@ function EditmyPage() {
 
 
      {/* rusere email  */}
-         {/* <div>
+         <div>
           <label>User Email:</label>
           <input type="email" name="email"    readOnly
     placeholder="Rent Amount" defaultValue={user.email} className="w-full p-2 border rounded" required />
-        </div> */}
+        </div>
 
 
 
  {/* user name */}
-         {/* <div>
+         <div>
           <label>User Name  :</label>
           <input type="text" name="username"  readOnly
            defaultValue={user.displayName}  
     placeholder="User Name " className="w-full p-2 border rounded" required />
-        </div> */}
+        </div>
 
  <div>
           <label>Product Image URL:</label>

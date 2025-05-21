@@ -56,7 +56,7 @@ export const router = createBrowserRouter([
          },
          {
           path:'editmypase/:id',
-         element:<EditmyPage></EditmyPage>,
+         element:<PrivetRouter><EditmyPage></EditmyPage></PrivetRouter>,
           loader:({params})=>fetch(`http://localhost:5000/uerrooms/${params.id}`),
          }
         

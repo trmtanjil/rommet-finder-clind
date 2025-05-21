@@ -136,6 +136,15 @@ import { AuthContext } from '../context/AuthContext';
             <option className='text-black'  value="Not Available">Not Available</option>
           </select>
         </div>
+
+
+{/* like count  */}
+ <div>
+          <label>Like Count:</label>
+          <input type="number" name="likecount" placeholder="Like Count" className="w-full p-2 border rounded" required />
+        </div>
+
+
 <div>
       <label htmlFor="textarea" className="block mb-1 font-medium">
     Textarea 
