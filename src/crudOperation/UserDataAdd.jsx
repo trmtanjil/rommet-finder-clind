@@ -1,8 +1,11 @@
 
- import React from 'react'
+ import React, { use } from 'react'
 import Swal from 'sweetalert2';
+import { AuthContext } from '../context/AuthContext';
  
  function UserDataAdd() {
+  const {user}=use(AuthContext)
+  console.log(user)
 
       const handleAddProduct=e=>{
     e.preventDefault();
@@ -60,8 +63,8 @@ import Swal from 'sweetalert2';
      {/* rusere email  */}
          <div>
           <label>User Email:</label>
-          <input type="email" name="email"  readOnly
-  disabled placeholder="Rent Amount" className="w-full p-2 border rounded" required />
+          <input type="email" name="email"    readOnly
+    placeholder="Rent Amount" defaultValue={user.email} className="w-full p-2 border rounded" required />
         </div>
 
 
@@ -70,12 +73,18 @@ import Swal from 'sweetalert2';
          <div>
           <label>User Name  :</label>
           <input type="text" name="username"  readOnly
-  disabled placeholder="User Name " className="w-full p-2 border rounded" required />
+           defaultValue={user.displayName}  
+    placeholder="User Name " className="w-full p-2 border rounded" required />
         </div>
 
  <div>
           <label>Product Image URL:</label>
           <input type="text" name="image" placeholder="Product Image URL" className="w-full p-2 border rounded" required />
+        </div>
+        {/* contact info  */}
+         <div>
+          <label>Contact Info:</label>
+          <input type="text" name="contactInfo" placeholder="Contact Info" className="w-full p-2 border rounded" required />
         </div>
 
 
@@ -117,6 +126,7 @@ import Swal from 'sweetalert2';
     <option className='text-black'  value="Early Bird">Early Bird</option>
   </select>
 </div>
+
        
     {/* Availability */}
  <div>
