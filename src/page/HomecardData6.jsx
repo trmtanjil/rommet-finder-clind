@@ -7,8 +7,8 @@ function HomecardData6({home}) {
     console.log(home)
     const {title,lifestyle,location,price,roomType,image,availabality} =home;
   return (
-    <div>
-        <div className="border rounded-xl shadow p-4 bg-white text-black justify-center  ">
+    <div >
+        <div className="border rounded-xl shadow p-4 bg-white text-black justify-center ">
            <div className='bg-amber-100 w-fit mx-auto rounded-xl'>
              <img className='h-[200px] p-2 mx-auto rounded-xl ' src={image} alt="" />
            </div>

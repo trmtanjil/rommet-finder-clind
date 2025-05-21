@@ -21,8 +21,8 @@ function MyListings() {
         })
     }
   },[user])
-  const handledelete=(id,e)=>{
-    e.preventDefault()
+  const handledelete=(id,)=>{
+  
     fetch(`http://localhost:5000/uerrooms/byemail/${id}`,{
       method:'DELETE',
       headers:{

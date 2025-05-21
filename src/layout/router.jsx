@@ -51,7 +51,7 @@ export const router = createBrowserRouter([
          },
          {
             path:'productdetails/:id',
-            element:<RommetUserDetails></RommetUserDetails>,
+            element:<PrivetRouter><RommetUserDetails></RommetUserDetails></PrivetRouter>,
             loader:({params})=>fetch(`http://localhost:5000/uerrooms/availabality/${params.id}`),
          },
          {

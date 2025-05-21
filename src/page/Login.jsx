@@ -9,14 +9,40 @@ function Login() {
   const navigat =useNavigate()
   const location = useLocation()
         const [showPass, setShowpass] = useState(false)
-    const {loginuser}=use(AuthContext)
+    const {loginuser,googleregister}=use(AuthContext)
 
 
     const handleLogin=e=>{
       e.preventDefault()
     const email = e.target.email.value;
     const password = e.target.password.value;
-
+    const passUper =/^(?=.*[A-Z]).+$/.test(password);
+    const passlower =/^(?=.*[a-z]).+$/.test(password);
+  
+    if (password.length<6) {
+        Swal.fire({
+  icon: "error",
+ 
+  text: "Length must be at least 6 characters !",
+});
+      return;
+    } 
+    if (!passUper) {
+        Swal.fire({
+  icon: "error",
+ 
+  text: "Must have an Uppercase letter in the password !",
+});
+      return;
+    }  
+    if (!passlower) {
+        Swal.fire({
+  icon: "error",
+ 
+  text: " Must have a Lowercase letter in the password !",
+});
+      return;
+    }
     loginuser(email,password)
     .then(userCredential=>{
       console.log(userCredential)
@@ -33,8 +59,8 @@ navigat(location?.state ||'/')
       console.log('login somthing error ', error)
       Swal.fire({
   icon: "error",
-  title: "Oops...",error,
-  text: "Something went wrong!",
+ 
+  text: "Your password is incorrect !",
 });
     })
 
@@ -43,7 +69,26 @@ navigat(location?.state ||'/')
 
         //login gogle
         const handlegogle=()=>{
-
+            googleregister()
+            .then(result=>{
+              console.log('google register succes',result);
+              Swal.fire({
+            icon: "success",
+            title: "Your Google login is succesfull",
+            showConfirmButton: false,
+            timer: 1500
+          });
+          
+            })
+            .catch(error=>{
+              
+                    Swal.fire({
+            icon: "error",
+           
+            text: "somthing is wrong!",error,
+          });
+          
+            }) 
         }
 
   return (

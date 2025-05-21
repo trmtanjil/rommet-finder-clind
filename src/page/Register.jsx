@@ -28,15 +28,27 @@ function Register() {
     console.log(name, photo, email)
   
     if (password.length<6) {
-      alert("Length must be at least 6 characters");
+       Swal.fire({
+       icon: "error",
+      
+       text: "Length must be at least 6 characters !",
+     });
       return;
     } 
     if (!passUper) {
-      alert("Must have an Uppercase letter in the password");
+            Swal.fire({
+       icon: "error",
+      
+       text: "Must have an Uppercase letter in the password !",
+     });
       return;
     }  
     if (!passlower) {
-       alert("Must have a Lowercase letter in the password");
+          Swal.fire({
+        icon: "error",
+       
+        text: " Must have a Lowercase letter in the password !",
+      });
       return;
     }
 
@@ -78,16 +90,20 @@ const handlegogle=()=>{
   .then(result=>{
     console.log('google register succes',result);
     Swal.fire({
-  position: "top-end",
   icon: "success",
-  title: "Your work has been saved",
+  title: "Your Google register is succesfull",
   showConfirmButton: false,
   timer: 1500
 });
 
   })
   .catch(error=>{
-        console.log('somthing erro',error)
+    
+          Swal.fire({
+  icon: "error",
+ 
+  text: "somthing is wrong!",error,
+});
 
   }) 
 

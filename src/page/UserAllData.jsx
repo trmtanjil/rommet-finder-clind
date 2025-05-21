@@ -9,7 +9,7 @@ import { Link } from 'react-router'
            <div className='bg-amber-100 w-fit mx-auto rounded-xl'>
              <img className='h-[200px] p-2 mx-auto rounded-xl ' src={user.image}alt="" />
            </div>
-  <h2 className="text-xl font-semibold text-center   py-2">{ }</h2>
+  <h2 className="text-xl font-semibold text-center   py-2">{user.title}</h2>
  <div className='flex justify-between'>
    <div className='flex items-center '>
     <CiLocationArrow1  ></CiLocationArrow1>

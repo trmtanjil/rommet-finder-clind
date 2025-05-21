@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { AiFillLike } from 'react-icons/ai'
 import { useLoaderData } from 'react-router'
  
 function RommetUserDetails() {
+
+    const [showContact, setShowContact]=useState(false)
+  const handleLikeContact=()=>{
+    setShowContact(true)
+  }
+
+
     const user =useLoaderData()
     const {image,lifestyle,location,availabality,price
 ,roomType,title}=user
@@ -30,9 +37,18 @@ function RommetUserDetails() {
       <p class="text-gray-600 mb-2"><span className="font-medium">Availability:</span> {availabality}</p>
       <p class="text-gray-800 font-bold text-lg mt-4">Price: ৳{price}</p>
     </div>
-    <button className="mt-6 w-full flex justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-xl transition-all">
+    <button 
+    onClick={handleLikeContact}
+    className="mt-6 w-full flex justify-center bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-xl transition-all">
      <AiFillLike />
     </button>
+    {
+      showContact && (
+        <div className='btn m-3 btn-primary'>
+          contact Number : {user.contactInfo}
+        </div>
+      )
+    }
   </div>
 </div>
     </div>

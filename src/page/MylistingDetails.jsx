@@ -2,6 +2,7 @@
 import { Link } from 'react-router'
  
  function MylistingDetails({user,index,handledelete}) {
+  
    return (
      <>
            <tr>
