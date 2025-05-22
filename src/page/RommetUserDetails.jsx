@@ -46,7 +46,7 @@ const hadleLikeCount = ()=>{
   <div className="md:w-1/2 p-6 flex flex-col justify-between">
 {/* like count  */}
   <div>
-    <p className='btn btn-primary'>{likeCount}</p>
+    <p className='btn btn-primary'> {likeCount} : people interested in</p>
   </div>
     <div>
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h2>

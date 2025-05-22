@@ -13,7 +13,7 @@ function Slider() {
 
 
   return (
-    <div className="w-full h-[400px] relative">
+    <div className="w-full  md:h-screen relative">
       {/* Custom arrows */}
       <div className="absolute top-1/2 left-4 z-10 -translate-y-1/2">
         <button ref={prevRef} className="text-white bg-black p-2 rounded-full">

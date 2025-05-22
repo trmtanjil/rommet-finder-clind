@@ -5,7 +5,7 @@ import { Link } from 'react-router'
  function UserAllData({user}) {
    return (
      <div>
-         <div className="border rounded-xl shadow p-4 bg-white text-black justify-center  ">
+         <div className="border rounded-xl shadow p-4 bg-gray-200 text-black justify-center  ">
            <div className='bg-amber-100 w-fit mx-auto rounded-xl'>
              <img className='h-[200px] p-2 mx-auto rounded-xl ' src={user.image}alt="" />
            </div>
