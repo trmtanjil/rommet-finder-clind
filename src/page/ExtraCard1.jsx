@@ -1,17 +1,24 @@
 import React from 'react'
+import { Slide, Zoom } from 'react-awesome-reveal'
+import Marquee from 'react-fast-marquee'
 
 function ExtraCard1() {
   return (
           <div className="bg-gray-900 py-10 px-4 text-white">
       <h2 className="text-3xl font-bold text-center mb-2">Destinations</h2>
-      <p className="text-center text-amber-300 mb-10">
+       <Marquee direction='right' gradient={false} speed={50}>
+
+        <p className="text-center text-amber-300 mb-10">
         Amazing featured destination package the world
       </p>
+       </Marquee>
+     
 
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
         {/* Left 3 Small Cards */}
         <div className="flex flex-col gap-6 flex-1">
           {/* Card 1 */}
+           <Zoom direction='center' duration={1200}>
           <div className="relative rounded-lg overflow-hidden shadow-lg group h-48">
             <img
               src="https://i.ibb.co/wmMDdGy/roommates-laying-bed-side-view-23-2149485689.jpg"
@@ -23,10 +30,12 @@ function ExtraCard1() {
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
+ </Zoom>
 
             <div className='flex gap-5 justify-between'>
 
                    {/* Card 3 */}
+           <Zoom direction='center' duration={1200}>
           <div className="relative rounded-lg overflow-hidden shadow-lg group h-48">
             <img
               src="https://i.ibb.co/4Z4nPgWg/hand-drawn-people-working-from-home-23-2148820405.jpg"
@@ -38,7 +47,10 @@ function ExtraCard1() {
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
+            
+ </Zoom>
           {/* Card 2 */}
+           <Zoom direction='center' duration={1200}>
           <div className="relative rounded-lg overflow-hidden shadow-lg group h-48">
             <img
               src="https://i.ibb.co/23g8Qz3V/austin.webp"
@@ -50,6 +62,7 @@ function ExtraCard1() {
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
+ </Zoom>
             </div>
           
 
@@ -57,6 +70,7 @@ function ExtraCard1() {
         </div>
 
         {/* Right Big Card */}
+         <Zoom direction='center' duration={1200}>
         <div className="relative h-[410px]  rounded-lg overflow-hidden shadow-lg group flex-1 lg:flex-[1.4]  ">
           <img
             src="https://i.ibb.co/DmmJtTj/chicago.webp"
@@ -68,6 +82,7 @@ function ExtraCard1() {
             <p className="text-base">30 Tours, 10 Hotels</p>
           </div>
         </div>
+ </Zoom>
       </div>
     </div>
   )

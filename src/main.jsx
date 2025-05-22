@@ -4,6 +4,7 @@ import './index.css'
  import { RouterProvider } from 'react-router'
 import { router } from './layout/router'
 import AuthProvider from './context/AuthProvider'
+import "intersection-observer";
 
 
 

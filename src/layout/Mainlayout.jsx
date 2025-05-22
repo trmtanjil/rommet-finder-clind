@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Foter from '../components/Footer'
 import Footer from '../components/Footer'
 
+
 function Mainlayout() {
   return (
     <div>
