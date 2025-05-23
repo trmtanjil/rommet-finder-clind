@@ -2,6 +2,7 @@ import React, {  useEffect, useState } from 'react'
 import { auth } from '../firebase/firebase.init'
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut } from 'firebase/auth'
 import { AuthContext } from './AuthContext'
+import Swal from 'sweetalert2';
 const provider = new GoogleAuthProvider();
 
 function AuthProvider({children}) {
@@ -25,11 +26,15 @@ function AuthProvider({children}) {
     }
     //logout
     const logOutUser=()=>{
+        Swal.fire({
+                 icon: "success",
+                 title: "Your Logout  is succesfull",
+                 showConfirmButton: false,
+                 timer: 1500
+               });
        setLoading(true)
       return signOut(auth)
     }
-
-
 
         const userInfo={
           creatuser, 

@@ -2,6 +2,7 @@
  import React, { use } from 'react'
 import Swal from 'sweetalert2';
 import { AuthContext } from '../context/AuthContext';
+import { Helmet } from 'react-helmet';
  
  function UserDataAdd() {
   const {user}=use(AuthContext)
@@ -27,7 +28,7 @@ import { AuthContext } from '../context/AuthContext';
       Swal.fire({
   position: "top-end",
   icon: "success",
-  title: "Your work has been saved",
+  title: "Your Post  has been saved",
   showConfirmButton: false,
   timer: 1500
 });
@@ -38,6 +39,7 @@ import { AuthContext } from '../context/AuthContext';
 
    return (
      <div>
+        <Helmet>  <title>Add to Find Roommate</title></Helmet>
             <div className="text-white  mx-auto p-4 bg-gray-600 shadow rounded-xl m-4">
       <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
       <form onSubmit={handleAddProduct}>

@@ -3,6 +3,7 @@ import React from 'react'
 import { useLoaderData } from 'react-router'
 import UserAllData from './UserAllData'
 import {useTypewriter ,Cursor} from 'react-simple-typewriter'
+import { Helmet } from 'react-helmet';
 
 function BrowseListing() {
 
@@ -21,7 +22,9 @@ function BrowseListing() {
   const data =useLoaderData()
   console.log(data)
   return (
-    <div className='mx-auto m-[50px]'>
+   <div>
+    <Helmet>  <title>Browse Listing</title></Helmet>
+     <div className='mx-auto m-[50px]'>
         <h1 className='text-2xl md:text-6xl py-10 text-center font-bold max-w-6xl  '>All  <span className=''>Rome {' '}</span>
           <span className='font-bold text-green-400'>
       {text}
@@ -41,6 +44,7 @@ function BrowseListing() {
       }
     </div>
     </div>
+   </div>
   )
 }
 

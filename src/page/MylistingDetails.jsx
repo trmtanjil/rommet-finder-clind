@@ -27,11 +27,11 @@ import { Link } from 'react-router'
           </div>
         </td>
         <td>
-          Zemlak, Daniel and Leannon
+        {user.username}
           <br />
-          <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+          <span className="badge badge-ghost badge-sm">{user.email}</span>
         </td>
-        <td>Purple</td>
+        <td>{user.availabality}</td>
         <th>
           <button className="btn  mx-2 btn-xs  btn-primary"> <Link to={`/productdetails/${user?._id}`}>   Details</Link></button>
           <button className="btn mx-2  btn-xs btn-primary"> <Link to={`/editmypase/${user?._id}`}>   Edit</Link></button>

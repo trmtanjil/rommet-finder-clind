@@ -3,8 +3,8 @@ import React from 'react'
 function Usersay() {
   return (
     <div>
-        <div className="bg-gray-900 py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto rounded-b-2xl" >
-  <div className="max-w-4xl mx-auto text-center">
+        <div className="bg-gray-500 py-16 px-6     max-w-6xl mx-auto rounded-b-2xl" >
+  <div className="max-w-6xl mx-auto text-center">
     {/* Header Section */}
     <h1 className="text-4xl font-bold    ">LISTEN TO WHAT THEY SAY</h1>
     <p className="text-xl text-gray-600 mb-12">
@@ -14,7 +14,7 @@ function Usersay() {
     {/* Testimonials Grid */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {/* Testimonial 1 */}
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>
@@ -26,7 +26,7 @@ function Usersay() {
       </div>
 
       {/* Testimonial 2 */}
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>
@@ -38,7 +38,7 @@ function Usersay() {
       </div>
 
       {/* Testimonial 3 */}
-      <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>

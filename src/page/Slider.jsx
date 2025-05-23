@@ -59,13 +59,13 @@ function Slider() {
   />
   <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
          <Rotate direction='top-left' duration={1200}>
-     <h1 className='   text-[20px]  pb-1 md:text-right'>Begin your smart h ial and plugs.</h1>
+     <h1 className='   text-[20px] text-[#ff6348]  pb-1 md:text-right'>Begin your smart h ial and plugs.</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Find your dream home with us</h1>
+      <h1 className='md:text-4xl text-2xl text-center  text-[#2ed573] pb-5 md:text-right'>Find your dream home with us</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Find affordable, safe, and comfortable rooms near your location. Book online with ease and move in stress-free.</p>
+             <p className=' pl-5 text-center text-[#5352ed] md:text-right'>Find affordable, safe, and comfortable rooms near your location. Book online with ease and move in stress-free.</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>
@@ -88,13 +88,13 @@ function Slider() {
           />
             <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
          <Rotate direction='top-left' duration={1200}>
-     <h1 className='   text-[20px]  pb-1 md:text-right'>Rooms That Fit Your Lifestyle and Budget..</h1>
+     <h1 className='   text-[20px] text-[#ff6348]   pb-1 md:text-right'>Rooms That Fit Your Lifestyle and Budget..</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Discover cozy spaces without breaking the bank..</h1>
+      <h1 className='md:text-4xl text-2xl text-center text-[#2ed573] pb-5 md:text-right'>Discover cozy spaces without breaking the bank..</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Your perfect room is just a click away. Discover verified listings with photos, prices, and instant booking options.</p>
+             <p className=' pl-5 text-center text-[#5352ed]  md:text-right'>Your perfect room is just a click away. Discover verified listings with photos, prices, and instant booking options.</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>
@@ -117,13 +117,13 @@ function Slider() {
           />
           <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
          <Rotate direction='top-left' duration={1200}>
-     <h1 className='   text-[20px]  pb-1 md:text-right'>Book Your Room Instantly, Stress-Free..</h1>
+     <h1 className='   text-[20px] text-[#ff6348]   pb-1 md:text-right'>Book Your Room Instantly, Stress-Free..</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Verified listings. Real reviews. Trusted platform..</h1>
+      <h1 className='md:text-4xl text-2xl text-center  text-[#2ed573]  pb-5 md:text-right'>Verified listings. Real reviews. Trusted platform..</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Safe and secure room rentals for students and professionals. Search smart, book faster, and enjoy comfortable living..</p>
+             <p className=' pl-5 text-center text-[#5352ed]  md:text-right'>Safe and secure room rentals for students and professionals. Search smart, book faster, and enjoy comfortable living..</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>

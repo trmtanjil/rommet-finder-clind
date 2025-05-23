@@ -10,7 +10,7 @@ function Footer() {
         {/* Contact Information */}
         <div>
           <h3 className="text-xl font-semibold mb-2">Contact Us</h3>
-          <p>Email: support@hoombox.com</p>
+          <p>Email: support@rommetfinder.com</p>
           <p>Phone: +123 456 7890</p>
           <p>Address: 123 Smart Street, Tech City</p>
         </div>
@@ -32,7 +32,7 @@ function Footer() {
             </li>
             <li>
               <Link to="/" className="hover:text-blue-200">
-                My Home Box
+                My Rommet Finder
               </Link>
             </li>
           </ul>
@@ -60,7 +60,7 @@ function Footer() {
 
       {/* Copyright Section */}
       <div className="mt-6 border-t border-blue-500 pt-4 text-sm text-center md:text-left">
-        <p> © 2025 HoomBox. All   reserved.</p>
+        <p> © 2025 RommetFinder. All   reserved.</p>
       </div>
     </div>
   </footer>

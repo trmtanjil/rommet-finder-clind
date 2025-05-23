@@ -2,6 +2,7 @@ import React, { use, useEffect, useState } from 'react'
 import { AuthContext } from '../context/AuthContext'
 import MylistingDetails from './MylistingDetails'
 import Swal from 'sweetalert2'
+import { Helmet } from 'react-helmet'
  
 function MyListings() {
   const {user} = use(AuthContext)
@@ -67,7 +68,9 @@ function MyListings() {
 
 
   return (
-   <div className="overflow-x-auto bg-gray-800">
+  <div>
+      <Helmet>  <title>Mylist</title></Helmet>
+     <div className="overflow-x-auto bg-gray-800">
   <table className="table">
     {/* head */}
     <thead>
@@ -78,8 +81,8 @@ function MyListings() {
           </label>
         </th>
         <th>Name</th>
-        <th>Job</th>
-        <th>Favorite Color</th>
+        <th>Information</th>
+        <th>availabality  </th>
         <th></th>
       </tr>
     </thead>
@@ -101,6 +104,7 @@ function MyListings() {
   
   </table>
 </div>
+  </div>
   )
 }
 

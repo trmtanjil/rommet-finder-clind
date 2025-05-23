@@ -14,6 +14,7 @@ import UserDataAdd from "../crudOperation/UserDataAdd";
 import RommetUserDetails from "../page/RommetUserDetails";
 import PrivetRouter from "../Privetrouter/PrivetRouter";
 import EditmyPage from "../page/EditmyPage";
+import Error from "../page/Error";
     
 
 
@@ -64,4 +65,8 @@ export const router = createBrowserRouter([
      
     ]
   },
+  {
+      path:'/*',
+      element:<Error></Error>
+    }
 ]);
