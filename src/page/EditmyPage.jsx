@@ -36,7 +36,7 @@ function EditmyPage() {
           lifestyle,
           availabality,
         };
-            fetch(`http://localhost:5000/uerrooms/${data?._id}`,{
+            fetch(`https://assserver-3.onrender.com/uerrooms/${data?._id}`,{
               method:'PUT',
               headers:{
                 'content-type':'application/json'

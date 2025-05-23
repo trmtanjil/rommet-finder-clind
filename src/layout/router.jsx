@@ -31,7 +31,7 @@ export const router = createBrowserRouter([
         {
             path:'brouserlisting',
             Component:BrowseListing,
-            loader:()=>fetch('http://localhost:5000/uerrooms'),
+            loader:()=>fetch('https://assserver-3.onrender.com/uerrooms'),
         },
         {
             path:'mylisting',
@@ -52,12 +52,12 @@ export const router = createBrowserRouter([
          {
             path:'productdetails/:id',
             element:<PrivetRouter><RommetUserDetails></RommetUserDetails></PrivetRouter>,
-            loader:({params})=>fetch(`http://localhost:5000/uerrooms/availabality/${params.id}`),
+            loader:({params})=>fetch(`https://assserver-3.onrender.com/uerrooms/availabality/${params.id}`),
          },
          {
           path:'editmypase/:id',
          element:<PrivetRouter><EditmyPage></EditmyPage></PrivetRouter>,
-          loader:({params})=>fetch(`http://localhost:5000/uerrooms/${params.id}`),
+          loader:({params})=>fetch(`https://assserver-3.onrender.com/uerrooms/${params.id}`),
          }
         
           

@@ -10,7 +10,7 @@ function MyListings() {
 
   useEffect(()=>{
     if(user?.email){
-        fetch(`http://localhost:5000/uerrooms/byemail?email=${user.email}`)
+        fetch(`https://assserver-3.onrender.com/uerrooms/byemail?email=${user.email}`)
        .then(res=>res.json())
        .then(data=>{
         console.log('my listing data add ', data)
@@ -22,8 +22,18 @@ function MyListings() {
     }
   },[user])
   const handledelete=(id,)=>{
-  
-    fetch(`http://localhost:5000/uerrooms/byemail/${id}`,{
+    Swal.fire({
+  title: "Are you sure?",
+  text: "You won't  Delet Your Product!",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Yes, delete it!"
+}).then((result) => {
+  if (result.isConfirmed) {
+
+  fetch(`https://assserver-3.onrender.com/uerrooms/byemail/${id}`,{
       method:'DELETE',
       headers:{
         'content-type':'application/json',
@@ -35,10 +45,19 @@ function MyListings() {
         Swal.fire({
   position: "top-end",
   icon: "success",
-  title: "Your work has been saved",
+  title: "Your Product Deleted Succesfully",
   showConfirmButton: false,
   timer: 1500
 });
+    Swal.fire({
+      title: "Deleted!",
+      text: "Your file has been deleted.",
+      icon: "success"
+    });
+  }
+});
+  
+  
       const  remainingdata =listUser.filter((data)=> data._id !==id);
         setLisUser(remainingdata)
       }

@@ -4,11 +4,11 @@ import Marquee from 'react-fast-marquee'
 
 function ExtraCard1() {
   return (
-          <div className="bg-gray-900 py-10 px-4 text-white">
+          <div className="bg-gray-500 py-10 px-4 sm:px-6 lg:px-8 text-white max-w-6xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-2">Destinations</h2>
        <Marquee direction='right' gradient={false} speed={50}>
 
-        <p className="text-center text-amber-300 mb-10">
+        <p className="py-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-white via-amber-100 to-amber-100 mb-10 text-7xl font-bold">
         Amazing featured destination package the world
       </p>
        </Marquee>

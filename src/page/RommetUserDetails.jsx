@@ -1,24 +1,31 @@
-import React, { useState } from 'react'
+import React, { use, useState } from 'react'
 import { AiFillLike } from 'react-icons/ai'
 import { useLoaderData } from 'react-router'
+import { AuthContext } from '../context/AuthContext'
  
 function RommetUserDetails() {
-  
+  const  {user}=use(AuthContext)
+  console.log(user)
+   
   const [showContact, setShowContact]=useState(false)
   const handleLikeContact=()=>{
     setShowContact(true)
   }
 
-  const user =useLoaderData()
+  const userr =useLoaderData()
   const {image,lifestyle,location,availabality,price
-    ,roomType,title,contactInfo}=user
+    ,roomType,title,contactInfo}=userr
 
-    const [likeCount,setLikeCount]=useState(user.likecount ||0);
+    const [likeCount,setLikeCount]=useState(userr.likecount ||0);
    
 
 const hadleLikeCount = ()=>{
-   fetch(`http://localhost:5000/uerrooms/count/${user._id}`,{
+   fetch(`https://assserver-3.onrender.com/uerrooms/count/${userr._id}`,{
     method:'PATCH',
+    headers:{
+        'Content-Type': 'application/json',
+    },
+    body:JSON.stringify({userEmail: user.email}),
    })
    .then(res=>res.json())
    .then(data=>{
@@ -33,7 +40,7 @@ const hadleLikeCount = ()=>{
 
   return (
     <div>
-        <div class="max-w-4xl mx-auto my-6 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+        <div className="max-w-4xl mx-auto my-6 bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
   {/* <!-- Image Left --> */}
   <div className="md:w-1/2">
     <img
@@ -50,11 +57,11 @@ const hadleLikeCount = ()=>{
   </div>
     <div>
       <h2 className="text-2xl font-semibold text-gray-800 mb-2">{title}</h2>
-      <p class="text-gray-600 mb-2"><span className="font-medium">Location:</span> {location}</p>
-      <p class="text-gray-600 mb-2"><span className="font-medium">Room Type:</span> {roomType}</p>
-      <p class="text-gray-600 mb-2"><span className="font-medium">Lifestyle:</span>{lifestyle}</p>
-      <p class="text-gray-600 mb-2"><span className="font-medium">Availability:</span> {availabality}</p>
-      <p class="text-gray-800 font-bold text-lg mt-4">Price: ৳{price}</p>
+      <p className="text-gray-600 mb-2"><span className="font-medium">Location:</span> {location}</p>
+      <p className="text-gray-600 mb-2"><span className="font-medium">Room Type:</span> {roomType}</p>
+      <p className="text-gray-600 mb-2"><span className="font-medium">Lifestyle:</span>{lifestyle}</p>
+      <p className="text-gray-600 mb-2"><span className="font-medium">Availability:</span> {availabality}</p>
+      <p className="text-gray-800 font-bold text-lg mt-4">Price: ৳{price}</p>
     </div>
    <div>
      <button 

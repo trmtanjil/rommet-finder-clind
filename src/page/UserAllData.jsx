@@ -5,6 +5,7 @@ import { Link } from 'react-router'
  function UserAllData({user}) {
    return (
      <div>
+    
          <div className="border rounded-xl shadow p-4 bg-gray-200 text-black justify-center  ">
            <div className='bg-amber-100 w-fit mx-auto rounded-xl'>
              <img className='h-[200px] p-2 mx-auto rounded-xl ' src={user.image}alt="" />
@@ -24,8 +25,7 @@ import { Link } from 'react-router'
   </span>
    
 </div>
-  {/* <p className="text-sm text-gray-500   ">Posted by:{availabality} </p> */}
-
+ 
   {/* Lifestyle Badges */}
   <div className="flex gap-2 mt-2">
        {user.lifestyle}

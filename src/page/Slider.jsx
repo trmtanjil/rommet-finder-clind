@@ -54,7 +54,7 @@ function Slider() {
           <div>
           <div className="relative">
   <img 
-    src={"https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+    src={"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1920&auto=format&fit=crop&fm=webp&monochrome=aaaaaa"}
     className="w-full h-full object-cover"
   />
   <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
@@ -62,10 +62,10 @@ function Slider() {
      <h1 className='   text-[20px]  pb-1 md:text-right'>Begin your smart h ial and plugs.</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Begin your smart home journey with essential and plugs.</h1>
+      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Find your dream home with us</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dicta laudantium hic placeat excepturi voluptas facilis modi unde ratione incidunt.</p>
+             <p className=' pl-5 text-center  md:text-right'>Find affordable, safe, and comfortable rooms near your location. Book online with ease and move in stress-free.</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>
@@ -83,18 +83,18 @@ function Slider() {
         <div>
           <div>
           <img 
-            src={"https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"}
+            src={"https://images.unsplash.com/photo-1600121848594-d8644e57abab?w=1920&auto=format&fit=crop&fm=webp&monochrome"}
             className="w-full h-full object-cover relative"
           />
             <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
          <Rotate direction='top-left' duration={1200}>
-     <h1 className='   text-[20px]  pb-1 md:text-right'>Begin your smart h ial and plugs.</h1>
+     <h1 className='   text-[20px]  pb-1 md:text-right'>Rooms That Fit Your Lifestyle and Budget..</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Begin your smart home journey with essential and plugs.</h1>
+      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Discover cozy spaces without breaking the bank..</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dicta laudantium hic placeat excepturi voluptas facilis modi unde ratione incidunt.</p>
+             <p className=' pl-5 text-center  md:text-right'>Your perfect room is just a click away. Discover verified listings with photos, prices, and instant booking options.</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>
@@ -112,18 +112,18 @@ function Slider() {
         <div>
           <div>
           <img 
-            src={"https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr="}
+            src={"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1920&auto=format&fit=crop&fm=webp&monochrome"}
             className="w-full h-full object-cover relative"
           />
           <div className='overflow-hidden absolute flex flex-col items-end right-[10%] md:w-[50%] font-bold top-[20%] pr-5'>
          <Rotate direction='top-left' duration={1200}>
-     <h1 className='   text-[20px]  pb-1 md:text-right'>Begin your smart h ial and plugs.</h1>
+     <h1 className='   text-[20px]  pb-1 md:text-right'>Book Your Room Instantly, Stress-Free..</h1>
       </Rotate>
     <AttentionSeeker effect='rubberBand'>
-      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Begin your smart home journey with essential and plugs.</h1>
+      <h1 className='md:text-4xl text-2xl text-center  text-amber-200 pb-5 md:text-right'>Verified listings. Real reviews. Trusted platform..</h1>
     </AttentionSeeker>
         <Slide delay={150} duration={3000}>
-             <p className=' pl-5 text-center  md:text-right'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque dicta laudantium hic placeat excepturi voluptas facilis modi unde ratione incidunt.</p>
+             <p className=' pl-5 text-center  md:text-right'>Safe and secure room rentals for students and professionals. Search smart, book faster, and enjoy comfortable living..</p>
         </Slide>
     <div className='flex gap-4 md:mt-6'>
      <Slide direction='left' duration={3000}> <button className='btn btn-primary'>Click Details</button></Slide>

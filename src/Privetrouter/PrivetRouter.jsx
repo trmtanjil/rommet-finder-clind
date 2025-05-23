@@ -13,12 +13,9 @@ function PrivetRouter({children}) {
     }
 
     if(!user){
-        return<Navigate state={location?.pathname} to='/login'></Navigate>
+        return<Navigate to='/login' state={location.pathname} replace ></Navigate>
     }
-
-
-
-
+ 
 
 
   return children;

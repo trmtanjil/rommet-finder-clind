@@ -15,7 +15,7 @@ import { AuthContext } from '../context/AuthContext';
     console.log(newFromData)
 
     // add product server 
-    fetch('http://localhost:5000/uerrooms',{
+    fetch('https://assserver-3.onrender.com/uerrooms',{
       method:'POST',
       headers:{
         'content-type':'application/json'
@@ -38,7 +38,7 @@ import { AuthContext } from '../context/AuthContext';
 
    return (
      <div>
-            <div className="  mx-auto p-4 bg-gray-600 shadow rounded-xl m-4">
+            <div className="text-white  mx-auto p-4 bg-gray-600 shadow rounded-xl m-4">
       <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
       <form onSubmit={handleAddProduct}>
        <div className="space-y-4 grid md:grid-cols-2 gap-4" >
