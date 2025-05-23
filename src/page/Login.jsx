@@ -99,7 +99,7 @@ function Login() {
       <div>
                 <div className="card  w-full max-w-sm shrink-0 shadow-2xl mx-auto mt-12 bg-gray-300">
           <div className="card-body">
-          <h1 className="text-5xl font-bold">Login  Now!</h1>
+          <h1 className="text-5xl text-black text-center font-bold">Login  Now!</h1>
           
             <form onSubmit={handleLogin}  className="fieldset">
               {/* email  */}

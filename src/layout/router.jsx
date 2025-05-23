@@ -15,7 +15,7 @@ import RommetUserDetails from "../page/RommetUserDetails";
 import PrivetRouter from "../Privetrouter/PrivetRouter";
 import EditmyPage from "../page/EditmyPage";
 import Error from "../page/Error";
-    
+ 
 
 
 
@@ -27,6 +27,7 @@ export const router = createBrowserRouter([
         {
             index:true,
             Component:Home,
+          
         },
      
         {
@@ -36,11 +37,14 @@ export const router = createBrowserRouter([
         },
         {
             path:'mylisting',
-            element:<PrivetRouter><MyListings></MyListings></PrivetRouter>
+            element:<PrivetRouter><MyListings></MyListings></PrivetRouter>,
+    
+            
         },
         {
             path:'login',
             Component:Login,
+          
         },
         {
             path:'register',
@@ -48,17 +52,20 @@ export const router = createBrowserRouter([
         },
          {
             path:'userdataadd',
-             element:<PrivetRouter><UserDataAdd></UserDataAdd></PrivetRouter>
+             element:<PrivetRouter><UserDataAdd></UserDataAdd></PrivetRouter>,
+             
          },
          {
             path:'productdetails/:id',
             element:<PrivetRouter><RommetUserDetails></RommetUserDetails></PrivetRouter>,
             loader:({params})=>fetch(`https://assserver-3.onrender.com/uerrooms/availabality/${params.id}`),
+             
          },
          {
           path:'editmypase/:id',
          element:<PrivetRouter><EditmyPage></EditmyPage></PrivetRouter>,
           loader:({params})=>fetch(`https://assserver-3.onrender.com/uerrooms/${params.id}`),
+          
          }
         
           

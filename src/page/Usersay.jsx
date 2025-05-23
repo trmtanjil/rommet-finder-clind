@@ -5,16 +5,16 @@ function Usersay() {
     <div>
         <div className="bg-gray-500 py-16 px-6     max-w-6xl mx-auto rounded-b-2xl" >
   <div className="max-w-6xl mx-auto text-center">
-    {/* Header Section */}
-    <h1 className="text-4xl font-bold    ">LISTEN TO WHAT THEY SAY</h1>
-    <p className="text-xl text-gray-600 mb-12">
+    {/* Header   */}
+    <h1 className="text-4xl font-bold  hover:text-green-100 duration-200 ">LISTEN TO WHAT THEY SAY</h1>
+    <p className="text-xl text-gray-800 mb-12 hover:text-green-100 duration-200">
       Inspiring, award-winning design meets modern, mobile-first service. Welcome to the future of hospitality.
     </p>
 
-    {/* Testimonials Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-      {/* Testimonial 1 */}
-      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
+    {/*   Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">
+      {/*   1 */}
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm hover:-translate-y-3.5 transition-all duration-200 hover:shadow-md   hover:bg-green-100  ">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>
@@ -25,8 +25,8 @@ function Usersay() {
         </p>
       </div>
 
-      {/* Testimonial 2 */}
-      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
+      {/*   2 */}
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm hover:-translate-y-3.5 transition-all duration-200 hover:shadow-md hover:bg-green-100">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>
@@ -37,8 +37,8 @@ function Usersay() {
         </p>
       </div>
 
-      {/* Testimonial 3 */}
-      <div className="bg-gray-200 p-6 rounded-lg shadow-sm">
+      {/*   3 */}
+      <div className="bg-gray-200 p-6 rounded-lg shadow-sm hover:-translate-y-3.5 transition-all duration-200 hover:shadow-md hover:bg-green-100">
         <div className="text-left mb-4">
           <span className="text-sm font-semibold text-gray-500">VIA TRIPADVISOR</span>
           <p className="text-xs text-gray-400">New York, USA</p>
