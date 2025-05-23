@@ -11,7 +11,7 @@ function Navbar() {
     <div className="navbar bg-base-100 shadow-sm px max-w-6xl mx-auto sticky to-0%">     
   <div className="navbar-start">
 
-    <img className='h-[40px] w-[40px] rounded-full ml-5' src="https://i.ibb.co/vvshBjwz/images-1.jpg" alt="" />
+    <img className='h-[40px] w-[40px] rounded-full ml-5' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
@@ -20,10 +20,10 @@ function Navbar() {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
           
-          
-          <NavLink to="/brouserlisting" className="hover:text-blue-500">Browse Listing</NavLink>
-          <NavLink to="/mylisting" className="hover:text-blue-500">My Listings</NavLink>
-          <NavLink to='userdataadd'>Add to Find Roommate</NavLink>
+      <NavLink    to="/" className="hover:text-blue-500  font-bold text-xl">Home</NavLink>
+          <NavLink   to="/brouserlisting" className="hover:text-blue-500 font-bold text-xl">Browse Listing</NavLink>
+          <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">My Listings</NavLink>
+          <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">Add to Find Roommate</NavLink>
        
       </ul>
     </div>

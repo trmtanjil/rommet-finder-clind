@@ -22,7 +22,7 @@ import { Link } from 'react-router'
             </div>
             <div>
               <div className="font-bold">{user.title}</div>
-              <div className="text-sm opacity-50">United States</div>
+              <div className="text-sm opacity-50">{user.location}</div>
             </div>
           </div>
         </td>
