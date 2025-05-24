@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div>
  
-    <div className="navbar bg-base-100 shadow-sm px max-w-6xl mx-auto sticky to-0%">     
+    <div className="navbar z-10 bg-base-100 shadow-sm px max-w-6xl mx-auto sticky to-0%">     
   <div className="navbar-start">
 
     <img className='h-[40px] w-[40px] rounded-full ml-5' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
@@ -18,13 +18,17 @@ function Navbar() {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-52 p-2 shadow">
           
-      <NavLink    to="/" className="hover:text-blue-500  font-bold text-xl">Home</NavLink>
+         <li><a><NavLink    to="/" className="hover:text-blue-500  font-bold text-xl">Home</NavLink></a></li>
+        <li>  
           <NavLink   to="/brouserlisting" className="hover:text-blue-500 font-bold text-xl">Browse Listing</NavLink>
-          <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">My Listings</NavLink>
+         </li>
+         <li> <NavLink   to="/mylisting" className="hover:text-blue-500 font-bold text-xl">My Listings</NavLink></li>
+         <li>
           <NavLink   to='userdataadd' className="hover:text-blue-500 font-bold text-xl">Add to Find Roommate</NavLink>
-       
+         </li>
+        
       </ul>
     </div>
     <div className="text-2xl font-bold">

@@ -14,7 +14,7 @@ function Extrafill2() {
       ></div>
 
       {/* Foreground Content */}
-      <div className="relative   py-12 px-6 md:px-20 bg-black/10 text-black">
+      <div className="relative   py-12 px-6 md:px-20 bg-black/50 text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
           Find a Roommate or Room for Rent
         </h1>
@@ -27,23 +27,23 @@ function Extrafill2() {
           <div className="flex-1 space-y-8">
             <div>
               <h3 className="text-2xl font-bold flex items-center gap-2"><BsPostageHeartFill size={50} /> Post Listing</h3>
-              <p className="text-gray-900 md:text-xl">Post and edit your listing digitally via our app.</p>
+              <p className="text-gray-100 md:text-xl">Post and edit your listing digitally via our app.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold flex items-center gap-2"><CiStreamOn size={50} /> Live Streaming</h3>
-              <p className="text-gray-900 md:text-xl">Go Live. Show your Room or Apartment. Attract quality roommates.</p>
+              <p className="text-gray-100 md:text-xl">Go Live. Show your Room or Apartment. Attract quality roommates.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold flex items-center gap-2"><MdOutlineAppShortcut size={50} /> App Tools</h3>
-              <p className="text-gray-900 md:text-xl">Screen tenants, verify ID, credit report, pay rent in the app.</p>
+              <p className="text-gray-100 md:text-xl">Screen tenants, verify ID, credit report, pay rent in the app.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold flex items-center gap-2"><BiMessageRounded size={50} /> Instant App Notifications</h3>
-              <p className="text-gray-900 md:text-xl">Conveniently set an alert to get notifications.</p>
+              <p className="text-gray-100 md:text-xl">Conveniently set an alert to get notifications.</p>
             </div>
             <div>
               <h3 className="text-2xl font-bold flex items-center gap-2"><IoServerOutline size={50} /> Resources and Links</h3>
-              <p className="text-gray-900 md:text-xl">Did you find a room for rent? Awesome! We can help!</p>
+              <p className="text-gray-100 md:text-xl">Did you find a room for rent? Awesome! We can help!</p>
             </div>
           </div>
 

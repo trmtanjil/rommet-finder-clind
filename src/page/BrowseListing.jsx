@@ -40,7 +40,7 @@ function BrowseListing() {
       <div className="  mx-auto mt-10 p-5">
       <div className="overflow-x-auto">
         <table className="table-auto w-full border border-gray-300">
-          <thead className="bg-green-200 text-gray-800">
+          <thead className="bg-primary text-gray-800">
             <tr>
               <th className="p-3 border">Name</th>
               <th className="p-3 border">Location</th>
@@ -58,7 +58,7 @@ function BrowseListing() {
                 <td className="p-3 border">{post.availabality}</td>
                 <td className="p-3 border">
              
-                    <button className="bg-green-500 text-white px-3 py-1 rounded hover:bg-green-600">
+                    <button className="bg-primary text-white px-3 py-1 rounded hover:bg-green-600">
                     <Link to={`/productdetails/${post?._id}`}> Rommet Details</Link>
                     </button>
            

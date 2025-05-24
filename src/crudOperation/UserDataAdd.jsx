@@ -32,7 +32,7 @@ import { Helmet } from 'react-helmet';
   showConfirmButton: false,
   timer: 1500
 });
-     
+      console.log(data)
     })
   }
 
@@ -40,7 +40,7 @@ import { Helmet } from 'react-helmet';
    return (
      <div>
         <Helmet>  <title>Add to Find Roommate</title></Helmet>
-            <div className="text-white  mx-auto p-4 bg-gray-600 shadow rounded-xl m-4">
+            <div className="text-white  mx-auto p-4 bg-gray-600 shadow rounded-xl m-4 px-[5%]">
       <h2 className="text-2xl font-bold mb-4">Add New Product</h2>
       <form onSubmit={handleAddProduct}>
        <div className="space-y-4 grid md:grid-cols-2 gap-4" >
@@ -146,13 +146,14 @@ import { Helmet } from 'react-helmet';
           <input type="number" name="likecount" placeholder="Like Count" className="w-full p-2 border rounded" required />
         </div> */}
 
+       </div>
 
 <div>
       <label htmlFor="textarea" className="block mb-1 font-medium">
     Textarea 
   </label>
 <textarea
-className='border'
+className='border w-full '
   placeholder="Write a short description about the room or your preferences "
   rows={4}
    name='textarea'
@@ -160,7 +161,6 @@ className='border'
 
 />
 </div>
-       </div>
 {/* //text area  */}
 
 
