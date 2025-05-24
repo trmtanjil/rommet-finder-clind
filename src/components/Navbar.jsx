@@ -13,9 +13,9 @@ function Navbar() {
         <div className='flex justify-center items-center'>
 
 
-      <span className='text-4xl font-bold '>R</span>
-    <img className='h-[40px] w-[40px] rounded-full  ' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
-         <span className='text-4xl font-bold'>MMET</span>
+      <span className='md:text-4xl text-xl font-bold '>R</span>
+    <img className='md:h-[40px] md:w-[40px] h-[20] w-[20] rounded-full  ' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
+         <span className='md:text-4xl text-xl font-bold'>MMET</span>
 
         </div>
     <div className="dropdown">
