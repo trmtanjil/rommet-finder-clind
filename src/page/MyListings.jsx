@@ -7,7 +7,7 @@ import { Helmet } from 'react-helmet'
 function MyListings() {
   const {user} = use(AuthContext)
   const [listUser, setLisUser] =useState([])
-  console.log(listUser)
+ 
 
   useEffect(()=>{
     if(user?.email){

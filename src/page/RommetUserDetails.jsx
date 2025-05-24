@@ -5,7 +5,7 @@ import { AuthContext } from '../context/AuthContext'
  
 function RommetUserDetails() {
   const  {user}=use(AuthContext)
-  console.log(user)
+ 
    
   const [showContact, setShowContact]=useState(false)
   const handleLikeContact=()=>{

@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet';
  
  function UserDataAdd() {
   const {user}=use(AuthContext)
-  console.log(user)
+ 
 
       const handleAddProduct=e=>{
     e.preventDefault();
     const form =e.target;
     const formData = new FormData(form)
     const newFromData=Object.fromEntries(formData.entries());
-    console.log(newFromData)
+    
 
     // add product server 
     fetch('https://assserver-3.onrender.com/uerrooms',{
@@ -32,7 +32,7 @@ import { Helmet } from 'react-helmet';
   showConfirmButton: false,
   timer: 1500
 });
-      console.log(data)
+     
     })
   }
 

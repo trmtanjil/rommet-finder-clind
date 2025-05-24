@@ -10,7 +10,7 @@ function Home() {
   
 
  const [alldata, setAllData] =useState([])
- console.log(alldata)
+ 
 
   useEffect(()=>{
     fetch('https://assserver-3.onrender.com/uerrooms/availabality')

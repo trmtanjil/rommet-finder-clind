@@ -20,9 +20,7 @@ function EditmyPage() {
 
 
 
-    console.log(title)
-    console.log(title)
-    console.log(user)
+   
     
     const handleEditData=e=>{
         e.preventDefault()

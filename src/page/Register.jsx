@@ -25,8 +25,7 @@ function Register() {
     const password = e.target.password.value;
     const passUper =/^(?=.*[A-Z]).+$/.test(password);
     const passlower =/^(?=.*[a-z]).+$/.test(password);
-
-    console.log(name, photo, email)
+ 
   
     if (password.length<6) {
        Swal.fire({

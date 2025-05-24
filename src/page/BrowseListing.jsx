@@ -1,8 +1,7 @@
 
 import React from 'react'
 import { Link, useLoaderData } from 'react-router'
-import UserAllData from './UserAllData'
-import {useTypewriter ,Cursor} from 'react-simple-typewriter'
+ import {useTypewriter ,Cursor} from 'react-simple-typewriter'
 import { Helmet } from 'react-helmet';
 
 function BrowseListing() {
@@ -20,7 +19,6 @@ function BrowseListing() {
 
 
   const data =useLoaderData()
-  console.log(data)
   return (
    <div>
     <Helmet>  <title>Browse Listing</title></Helmet>
@@ -53,8 +51,8 @@ function BrowseListing() {
           </thead>
           <tbody>
             {data.map((post) => (
-              <tr key={post._id} className="text-center hover:bg-green-500">
-                <td className="p-3 border">{post.username}</td>
+              <tr key={post._id} className="text-center hover:bg-gray-500">
+                <td className="px-4 py-4  border">{post.username}</td>
                 <td className="p-3 border">{post.location}</td>
                 <td className="p-3 border">${post.price}</td>
                 <td className="p-3 border">{post.availabality}</td>

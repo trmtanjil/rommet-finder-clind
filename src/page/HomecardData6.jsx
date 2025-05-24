@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 function HomecardData6({home}) {
   
-    console.log(home)
+ 
     const {title,lifestyle,location,price,roomType,image,availabality} =home;
   return (
     <div   className='h-[400px] mx-auto'>

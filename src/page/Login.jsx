@@ -45,7 +45,7 @@ function Login() {
     }
     loginuser(email,password)
     .then(userCredential=>{
-      console.log(userCredential)
+      
       Swal.fire({
   position: "top-end",
   icon: "success",
