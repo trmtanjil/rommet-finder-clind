@@ -66,7 +66,7 @@ function EditmyPage() {
           <input type="text" name="title"
           value={title}
           onChange={(e)=>setTitle(e.target.value)}
-          placeholder=" Title " className="w-full p-2 border rounded" required />
+          placeholder=" Title " className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
     {/* location  */}
          <div>
@@ -74,7 +74,7 @@ function EditmyPage() {
           <input type="text"
           value={location}
           onChange={(e)=>setLocation(e.target.value)}
-          name="location" placeholder="Location" className="w-full p-2 border rounded" required />
+          name="location" placeholder="Location" className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
         {/* rent price  */}
          <div>
@@ -82,7 +82,7 @@ function EditmyPage() {
           <input type="number" name="price"
         value={price}
         onChange={(e)=>setPrice(e.target.value)}
-          placeholder="Rent Amount" className="w-full p-2 border rounded" required />
+          placeholder="Rent Amount" className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
 
 
@@ -91,7 +91,7 @@ function EditmyPage() {
          <div>
           <label>User Email:</label>
           <input type="email" name="email"    readOnly
-    placeholder="Rent Amount" defaultValue={user.email} className="w-full p-2 border rounded" required />
+    placeholder="Rent Amount" defaultValue={user.email} className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
 
 
@@ -101,7 +101,7 @@ function EditmyPage() {
           <label>User Name  :</label>
           <input type="text" name="username"  readOnly
            defaultValue={user.displayName}  
-    placeholder="User Name " className="w-full p-2 border rounded" required />
+    placeholder="User Name " className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
 
  <div>
@@ -110,7 +110,7 @@ function EditmyPage() {
       value={image}
       onChange={(e)=> setImege(e.target.value)}
       
-          placeholder="Product Image URL" className="w-full p-2 border rounded" required />
+          placeholder="Product Image URL" className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
         {/* contact info  */}
          <div>
@@ -118,7 +118,7 @@ function EditmyPage() {
           <input type="text"
         onChange={(e)=>setcontactInfo(e.target.value)}
        value={contactInfo}
-          name="contactInfo" placeholder="Contact Info" className="w-full p-2 border rounded" required />
+          name="contactInfo" placeholder="Contact Info" className="md:w-full w-[90%]  p-2 border rounded" required />
         </div>
 
 
@@ -132,7 +132,7 @@ function EditmyPage() {
       name="roomType"
         onChange={(e)=>setroomType(e.target.value)}
       value={roomType}
-      className="w-full border rounded-md p-2 "
+      className="md:w-full w-[90%]  border rounded-md p-2 "
       required
     >
       <option className='text-black'  value="">Select Room Type</option>
@@ -150,7 +150,7 @@ function EditmyPage() {
   <select
     id="lifestyle"
     name="lifestyle"
-    className="w-full border rounded-md p-2"
+    className="md:w-full w-[90%]  border rounded-md p-2"
     value={lifestyle}
         onChange={(e)=>setlifestyle(e.target.value)}
     required
@@ -172,17 +172,18 @@ function EditmyPage() {
           <select name="availabality" 
           value={availabality}
         onChange={(e)=>setavailabality(e.target.value)}
-          className="w-full p-2 border rounded">
+          className="md:w-full w-[90%]  p-2 border rounded">
             <option className='text-black'  value="Available">Available</option>
             <option className='text-black'  value="Not Available">Not Available</option>
           </select>
         </div>
+       </div>
 <div>
       <label htmlFor="textarea" className="block mb-1 font-medium">
     Textarea 
   </label>
 <textarea
-className='border'
+className=' border md:w-full w-[90%] '
   placeholder="Write a short description about the room or your preferences "
   rows={4}
    name='textarea'
@@ -190,7 +191,6 @@ className='border'
 
 />
 </div>
-       </div>
 {/* //text area  */}
 
 

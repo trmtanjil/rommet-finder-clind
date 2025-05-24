@@ -14,7 +14,7 @@ function Navbar() {
 
 
       <span className='md:text-4xl text-xl font-bold '>R</span>
-    <img className='md:h-[40px] md:w-[40px] h-[20] w-[20] rounded-full  ' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
+    <img className='md:h-[40px] md:w-[40px] h-[20px] w-[20px] rounded-full  ' src="https://i.ibb.co/21b9N5V9/Chat-GPT-Image-May-23-2025-06-27-21-PM.png" alt="" />
          <span className='md:text-4xl text-xl font-bold'>MMET</span>
 
         </div>
