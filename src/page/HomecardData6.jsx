@@ -33,7 +33,7 @@ function HomecardData6({home}) {
  </div>
 <div className='flex justify-between py-3'>
       <p>Room Type: {roomType}</p>
-       <p className="font-medium">Rent: ৳{price}</p>
+       <p className="font-medium">Rent: $ {price}</p>
    
    
 </div>
