@@ -25,8 +25,8 @@ function ExtraCard1() {
               alt="Japan"
               className="w-full h-full object-cover group-hover:opacity-70 transition duration-300  group-hover:scale-110 rounded-lg"
             />
-            <div className="absolute top-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
-              <h3 className="text-lg font-bold">Japan</h3>
+            <div className="absolute top-4 left-4  bg-black/50 px-3 py-2 rounded">
+              <h3 className="text-lg font-bold">Chitagong</h3>
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
@@ -42,8 +42,8 @@ function ExtraCard1() {
               alt="Greek Islands"
               className="w-full h-full object-cover group-hover:opacity-70 transition duration-300  group-hover:scale-110"
             />
-            <div className="absolute top-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
-              <h3 className="text-lg font-bold">Greek Islands</h3>
+            <div className="absolute top-4 left-4 bg-black/50  bg-opacity-60 px-3 py-2 rounded">
+              <h3 className="text-lg font-bold">Dhaka</h3>
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
@@ -57,8 +57,8 @@ function ExtraCard1() {
               alt="Korea"
               className="w-full h-full object-cover group-hover:opacity-70 transition duration-300  group-hover:scale-110"
             />
-            <div className="absolute top-4 left-4 bg-black bg-opacity-60 px-3 py-2 rounded">
-              <h3 className="text-lg font-bold">Korea</h3>
+            <div className="absolute top-4 left-4 bg-black/50  bg-opacity-60 px-3 py-2 rounded">
+              <h3 className="text-lg font-bold">Shylhet</h3>
               <p className="text-sm">30 Tours, 10 Hotels</p>
             </div>
           </div>
@@ -77,8 +77,8 @@ function ExtraCard1() {
             alt="Europe River Cruises"
             className="w-full h-[410px] object-cover group-hover:opacity-70 transition duration-300 group-hover:scale-110 rounded-lg"
           />
-          <div className="absolute top-4 left-4 bg-black bg-opacity-60 px-4 py-3 rounded">
-            <h3 className="text-2xl font-bold">Europe River Cruises</h3>
+          <div className="absolute top-4 left-4 bg-black/50  bg-opacity-60 px-4 py-3 rounded">
+            <h3 className="text-2xl font-bold"> Narsingdi</h3>
             <p className="text-base">30 Tours, 10 Hotels</p>
           </div>
         </div>
