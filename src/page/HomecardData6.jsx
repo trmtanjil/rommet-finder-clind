@@ -5,7 +5,9 @@ import { Link } from 'react-router';
 function HomecardData6({home}) {
   
  
-    const {title,lifestyle,location,price,roomType,image,availabality} =home;
+    
+  const {title,lifestyle,location,price,roomType,image,availabality} =home;
+  console.log(title)
   return (
     <div   className='h-[400px] mx-auto'>
        <div className="flex justify-center items-center p-4">
