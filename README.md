@@ -21,14 +21,14 @@ If you are developing a production application, we recommend using TypeScript wi
 
 
 
-0 ✅. website featurse 
-1 ✅. এই ওয়েবসাইটের লক্ষ্য হলো ব্যবহারকারীদের জন্য একটি এমন প্ল্যাটফর্ম তৈরি করা, যেখানে তারা রুমমেট খুঁজতে পারবে লোকেশন, বাজেট এবং লাইফস্টাইল প্রেফারেন্স অনুযায়ী।
+0 ✅. website featurse
+1 ✅. The goal of this website is to create a platform for users, where they can find roommates according to location, budget and lifestyle preferences.
 
 2 ✅. Authentication & Routing
-Email/Password ও Google Login সিস্টেম ,Update & Delete ফিচার কাজ করছে,শুধু লগইন ইউজারের পোস্ট
+Email/Password and Google Login system, Update & Delete feature is working, only logged in user posts
 
-3 ✅. Roommate Post Features , Edit & Submit করলে toast দিয়ে success message
+3 ✅. Roommate Post Features, Edit & Submit will show success message with toast
 
-4 ✅.   Like করলে Count বাড়ে ,নিজের পোস্টে like করা যায় না , Like এর পর Contact Number show হয়
+4 ✅. Like increases Count, own post cannot be liked, Contact Number is shown after Like
 
-5 ✅.UI/UX & Animations , Featured Section (limit দিয়ে MongoDB থেকে ৬টি পোস্ট) , ৩টি Slide সহ Banner BrowseList all data show ,
+5 ✅. UI/UX & Animations, Featured Section (limit 6 posts from MongoDB), Banner with 3 Slides BrowseList all data show,
